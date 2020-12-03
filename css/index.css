@@ -1,0 +1,255 @@
+/* css variables */
+:root{
+--navbar-height:59px;
+
+}
+
+/* defaults */
+*{
+  margin: 0;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* navbar */
+#navbar{
+display: flex;
+flex-direction: row;
+align-items: center;
+position:absolute;
+top: 0px; 
+}
+
+/* logo and image */
+#logo img{
+border-radius: 50%; 
+height: 90px; width:90px;
+margin: -1px 6px;
+}
+
+/* nav-items */
+#navbar>ul{
+  display: flex;
+  flex-direction: row;
+
+}
+
+#navbar::before{
+  content: "";
+  background-color:rgb(0, 0, 0);
+  position: absolute;
+  height:100%; width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1; 
+  opacity: 0.8;
+}
+
+
+#navbar>ul>li{
+  list-style: none;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+#navbar ul li a{
+  color: rgb(247, 244, 244);
+  font-family: cursive;
+  text-decoration: none;
+  padding: 3px 22px;
+  border-radius: 20px;
+  /* border: 2px solid; */
+display: block;
+}
+
+#navbar ul li a:hover{
+  color:rgb(0, 0, 0)  ;
+  background-color: rgb(250, 244, 244);
+}
+
+
+
+/* home section  */
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 4px 200px;
+ align-items: center;
+justify-content: center;
+height: 540px; 
+width: 100%;
+}
+
+#home::before{
+  content: "";
+  background-image:url("../img/p-6.jpg");
+  position: absolute;
+  height:70%; width: 100%;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  z-index: -1; 
+
+}
+
+
+/* home */
+#home h1{
+  color: rgb(223, 234, 238);
+  text-shadow:4px -5px 5px rgb(0, 0, 0);
+  text-align: center;
+  font-size: 3rem;
+}
+
+#home p{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 4px 10px;
+}
+
+
+/* services */
+.service-container{
+margin-top: 20px;
+background-color: azure;
+}
+
+
+#services{
+  display: flex;
+  margin: 34px;
+}
+#services #box{
+  margin: 3px 6px;
+}
+#box h5{
+  font-size: 1.3rem;
+}
+
+#services #box img{
+box-shadow: -2px 3px 18px 6px #5f0000;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 96px;
+}
+#services #box p{
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+
+
+/*  utility*/
+.h-secondary{
+  font-size: 2rem;
+  padding: 12px;
+}
+
+.btn{
+padding: 6px 10px;
+border: 1px solid white;
+font-size: 1.1rem;
+background-color: rgb(55, 202, 41);
+color: #e4dcdc;
+font-family: sans-serif larger;
+border-radius: 5px;
+margin: 30px 0px;
+border: 2px solid black;
+}
+
+.center{
+  text-align: center;
+}
+.h-primary{
+  margin: 30px 0px; 
+  font-size: 2rem;   
+}
+
+
+/* clients start */
+#client-section{
+display: flex;
+flex-direction: column;
+}
+.my-client{
+  margin-bottom: 2.5rem;
+}
+
+#clients{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(206 21 21 / 85%);
+}
+
+#clients img{
+  height: 130px;
+  border-radius: 10px;
+}
+
+#client-item{
+  padding: 34px;
+}
+
+/* contact-us */
+#contact{
+    width: 40rem;
+    display: block;
+    margin: auto;
+    padding: 1rem 4rem;
+
+}
+
+.group{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.group input{
+padding: 0.5rem ;
+}
+
+.group label{
+  font-family: sans-serif;
+  margin: 0.7rem 0rem;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+#sendbtn{
+    margin-top:20px;
+    padding: 8px 30px;
+}
+
+/* about us */
+#about-box{
+  display: block;
+  margin: 2rem;
+  font-weight: bolder;
+}
+#about{
+  text-align: center;
+} 
+.about-p{
+  font-size: 1rem;
+}
+
+.tech{
+  display:flex; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.tech b{
+  margin: 0.2rem ;
+  font-size: 1.2rem;
+  
+}
